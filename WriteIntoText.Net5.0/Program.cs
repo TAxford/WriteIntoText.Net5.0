@@ -12,9 +12,11 @@ namespace WriteIntoText.Net5._0
             File.WriteAllLines(@"C:\Users\txa334\Desktop\Assets\highscores.txt", lines);
 
             Console.WriteLine("Please give the file a name");
-            string fileName = Console.ReadLine();
 
-            
+            string fileName = Console.ReadLine();
+            string input = Console.ReadLine();
+            File.WriteAllText(@"C:\Users\txa334\Desktop\Assets" + fileName + ".txt" , input);
+
         }
     }
 }
